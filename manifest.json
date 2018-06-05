@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Test Discarded Tabs",
+  "version": "0.1",
+  "description": "Demonstrates issues with interacting with discarded tabs",
+  "author": "Ian Bicking (http://www.ianbicking.org)",
+  "homepage_url": "https://github.com/ianb/test-discarded-tabs-extension/",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "generic-fox.png",
+    "default_title": "Run the test (see console)"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ]
+}
